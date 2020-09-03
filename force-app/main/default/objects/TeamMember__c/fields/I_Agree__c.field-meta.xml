@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_Agree__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>BY CLICKING THE CHECK BOX, I HAVE AGREED FOLLOW THE  PATICIPATION RULES OF THE CRICKET COUNCIL OF ONTARIO TRIAL.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>BY CLICKING THE CHECK BOX, I HAVE AGREED FOLLOW THE  PATICIPATION RULES OF THE CRICKET COUNCIL OF ONTARIO TRIAL.</inlineHelpText>
+    <label>I Agree</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

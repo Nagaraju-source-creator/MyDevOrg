@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_income__c</fullName>
+    <externalId>false</externalId>
+    <label>Annual income</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2-3</fullName>
+                <default>false</default>
+                <label>2-3</label>
+            </value>
+            <value>
+                <fullName>3-4 Lacks</fullName>
+                <default>false</default>
+                <label>3-4 Lacks</label>
+            </value>
+            <value>
+                <fullName>4-5 Lacks</fullName>
+                <default>false</default>
+                <label>4-5 Lacks</label>
+            </value>
+            <value>
+                <fullName>above 6  Lacks</fullName>
+                <default>false</default>
+                <label>above 6  Lacks</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

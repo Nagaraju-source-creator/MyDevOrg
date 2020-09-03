@@ -1,0 +1,6 @@
+<apex:page >
+<apex:sectionHeader title="Account" subtitle="New Page" />    
+    <apex:insert name="header"/><br/>
+    <apex:pageBlock title="sample Block" > This is my Block </apex:pageBlock><br/>
+    <apex:insert name="body"/>
+</apex:page>

@@ -1,0 +1,16 @@
+<apex:page >
+<apex:form >
+<script>
+function show()
+{
+alert("hello");
+}
+function show1()
+{
+alert("hai");
+}
+</script>
+<apex:commandButton value="click" onclick="show()"/>
+<apex:commandButton value="eclick" onclick="show1()"/>
+</apex:form>
+</apex:page>

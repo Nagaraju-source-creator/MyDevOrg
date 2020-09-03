@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>studentNameRule</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(REGEX( Name ,&quot;^[a-z A-Z]*$&quot;))</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>student name must be alphabets</errorMessage>
+</ValidationRule>

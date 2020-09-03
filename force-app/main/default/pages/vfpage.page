@@ -1,0 +1,18 @@
+<apex:page >
+<apex:form >
+<script>
+function show()
+{
+var apexname=document.getElementById('{!$Component.one}').value;
+var name=document.getElementById("two").value;
+alert('apexname'+apexname+'==='+name);
+}
+</script>
+<apex:outputLabel >Enter apex</apex:outputLabel>
+<apex:inputText id="one"/>
+<br/>
+<apex:outputLabel >HTML</apex:outputLabel>
+<input type="text" id="two"/>
+<apex:commandButton value="click" onclick="show()"/>
+</apex:form>
+</apex:page>

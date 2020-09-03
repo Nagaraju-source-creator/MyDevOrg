@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TestButton</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>TestButton</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>https://jocker-dev-ed.my.salesforce.com/00b/e?type=Contact&amp;setupid=ContactLinks&amp;PageOrSobjectType=Contact&amp;retURL=%2Fp%2Fsetup%2Flink%2FActionButtonLinkList%3FpageName%3DContact%26type%3DContact%26setupid%3DContactLinks%26retURL%3D%252Fui%252Fsetup%252FSetup%253Fsetupid%253DContact</url>
+</WebLink>

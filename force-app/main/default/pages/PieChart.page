@@ -1,0 +1,11 @@
+<apex:page controller="ChartingExample" title="PieChart">
+    <apex:chart height="350" width="450" data="{!pieData}">
+        <apex:pieSeries dataField="data" labelField="name"/>
+        <apex:legend position="right"/> 
+        
+        
+    
+    </apex:chart>
+    
+    
+</apex:page>

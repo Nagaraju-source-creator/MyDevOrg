@@ -1,0 +1,6 @@
+<apex:page >
+    {!10+20}
+ <br/>{!10}<br/>{!'sam'}<br/>{!TODAY()}<br/>
+ {!DATE(2013,4,12)}
+
+</apex:page>

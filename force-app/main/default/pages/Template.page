@@ -1,0 +1,18 @@
+<apex:page >
+   <apex:composition template="templatepage">
+   <apex:define name="header">
+  <apex:form >
+  <apex:outputLabel >Select Industry</apex:outputLabel> &nbsp;&nbsp;&nbsp;&nbsp;     
+   <apex:selectList size="1">
+       <apex:selectOption itemLabel="Govt" itemValue="Govt"/>
+      <apex:selectOption itemLabel="IT" itemValue="IT"/>
+   </apex:selectList> <br/>   
+       </apex:form>     
+       </apex:define> 
+    <apex:define name="body">
+     <div style="background-color:yellow;width:200px;">
+        Bended@copyrigt reserved  
+        </div>
+      </apex:define>
+       </apex:composition> 
+     </apex:page>

@@ -1,0 +1,11 @@
+<apex:page controller="RelationShipExample1">
+<apex:form >
+<apex:commandButton value="click" action="{!show}"/>
+<apex:dataList value="{!acc}" var="a">
+<apex:outputLabel >Account name:{!a.name}:::Account industry:{!a.industry}</apex:outputLabel>
+<apex:dataList value="{!a.Contacts}" var="b">
+{!b.name}  {!b.Email}
+</apex:dataList>
+</apex:dataList>
+</apex:form>
+ </apex:page>

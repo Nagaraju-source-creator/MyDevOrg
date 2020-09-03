@@ -1,0 +1,17 @@
+<apex:page controller="Sample1">
+    <apex:pageBlock >
+
+    <apex:repeat value="{!acct}" var="a">
+
+        <apex:pageBlockSection >
+            <apex:outputField value="{!a.Name}"/>
+        </apex:pageBlockSection>
+
+        <apex:pageBlockTable headerClass="ContactName" value="{!a.Contacts}" var="c">
+            <apex:column value="{!c.Name}"/>
+        </apex:pageBlockTable>
+
+    </apex:repeat>
+
+    </apex:pageBlock>
+</apex:page>

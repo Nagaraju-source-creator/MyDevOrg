@@ -1,0 +1,14 @@
+<apex:page standardController="Account" recordSetVar="accounts">
+<apex:pageBlock title="Recently Viewed Accounts">
+<apex:form id="theform">
+<apex:pageBlockSection >
+<apex:dataList var="a" value="{!account}" type="1">
+{!a.name}
+</apex:dataList></apex:pageBlockSection>
+<apex:panelGrid columns="2">
+<apex:commandLink action="{!Previous}">Previous</apex:commandLink>
+<apex:commandLink action="{!Next}">Next</apex:commandLink>
+</apex:panelGrid>
+</apex:form>
+</apex:pageBlock>
+</apex:page>

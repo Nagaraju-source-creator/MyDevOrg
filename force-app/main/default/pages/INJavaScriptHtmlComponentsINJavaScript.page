@@ -1,0 +1,14 @@
+<apex:page >
+ <apex:form >
+<script>
+function show()
+{
+
+var name = document.getelemenById("one").value;
+alert('hello'+name);
+}
+</script>
+<input type="text" id="one" onchange="show()"/>
+<apex:commandButton value="click" onclick="show"/>
+</apex:form>
+</apex:page>

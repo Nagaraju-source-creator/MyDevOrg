@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PancardValidation</fullName>
+    <active>false</active>
+    <errorConditionFormula>!REGEX( Pancard__c, &quot;[a-zA-Z]{5}[0-9]{4}[a-zA-Z]{1}&quot;)</errorConditionFormula>
+    <errorMessage>Invalid PanNumber</errorMessage>
+</ValidationRule>

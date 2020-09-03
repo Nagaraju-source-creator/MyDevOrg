@@ -1,0 +1,12 @@
+<apex:page standardController="Contact" recordSetVar="items">
+<apex:dataTable value="{!items}" var="a">
+<apex:column headerValue="Account Name">
+{!a.name}
+</apex:column>
+<apex:column >
+<apex:facet name="header">Phone</apex:facet>
+{!a.Phone}
+</apex:column>
+</apex:dataTable>
+
+</apex:page>

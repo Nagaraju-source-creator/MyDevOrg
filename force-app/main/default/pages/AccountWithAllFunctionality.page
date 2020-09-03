@@ -1,0 +1,27 @@
+<apex:page standardController="Account" recordSetVar="items">
+<apex:form >
+<apex:selectList value="{!filterid}" size="1">
+    <apex:selectOptions value="{!listviewoptions}"/>
+    <apex:actionSupport event="onchange"  reRender="one"/>
+  </apex:selectList> 
+<apex:pageBlock >
+    <apex:pageBlockTable value="{!items}" var="a" id="one">
+    <apex:column width="5px">
+   <apex:facet name="header">
+ <apex:inputCheckbox />                   
+ </apex:facet>
+ <apex:inputCheckbox />
+  </apex:column>
+   <apex:column width="90px;">
+        <apex:facet name="header">
+      Action
+        </apex:facet>
+      <apex:commandLink value="Edit" action="/{a.id}/e?retURI={a.id}"/>
+ &nbsp;&nbsp;&nbsp;&nbsp;      
+        <apex:commandLink value="Delete" action="URLFOR($Action.Account.delete,a.id)"/>
+    </apex:column>
+    <apex:column value="{!a.name}"/>         
+    </apex:pageBlockTable>                         
+    </apex:pageBlock>
+    </apex:form>
+    </apex:page>

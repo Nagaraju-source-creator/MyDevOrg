@@ -1,0 +1,12 @@
+<apex:page standardController="Account">
+<apex:pageBlock >
+ you are looking at some related lists for {!account.name}:  
+ </apex:pageBlock>  
+ <apex:relatedList list="Oportunities"/>  
+  <apex:relatedList list="Contacts"> 
+ <apex:facet name="header">
+ Titles can be overriden with facets   
+ </apex:facet>  
+</apex:relatedList> 
+<apex:relatedList list="Cases" title="Or you keep the imag,but change the text" />
+</apex:page>

@@ -1,0 +1,10 @@
+<apex:page controller="ShowContactsForAccountCLS">
+<apex:pageBlock > 
+ <apex:pageblockTable value="{!contactList}" var="cl">
+   <apex:column value="{!cl.FirstName}"/>
+   <apex:column value="{!cl.LastName}"/>
+   <apex:column value="{!cl.Phone}"/>
+   <apex:column value="{!cl.Email}"/>
+ </apex:pageblockTable>
+</apex:pageBlock>
+</apex:page>

@@ -1,0 +1,4 @@
+<apex:page controller="Age">
+ <apex:outputLabel >{!age}</apex:outputLabel>
+ <apex:outputLabel >{!name}</apex:outputLabel>
+</apex:page>

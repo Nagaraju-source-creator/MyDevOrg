@@ -1,0 +1,12 @@
+<apex:page controller="RelationShipExample">
+<apex:form >
+<apex:pageBlock rendered="{!NOT(ISNULL(cont))}">
+<apex:pageBlockTable value="{!cont}" var="a">
+<apex:column value="{!a.name}"/>
+<apex:column value="{!a.Account.name}"/>
+<apex:column value="{!a.Account.industry}"/>
+</apex:pageBlockTable>
+</apex:pageBlock>
+<apex:commandButton value="click" action="{!show}"/>
+</apex:form>
+  </apex:page>

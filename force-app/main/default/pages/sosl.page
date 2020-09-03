@@ -1,0 +1,23 @@
+<apex:page controller="DeferenceDemoController" >
+    <apex:form >
+        <apex:commandButton value="Search"  action="{!sosldemo_method}"/>
+ <apex:pageBlock title="Account">
+     <apex:pageBlockTable value="{!acclist}" var="acc" > 
+      <apex:column value="{!acc.name}"/>
+         <apex:column value="{!acc.Phone}"/>
+      </apex:pageBlockTable>
+ </apex:pageBlock> 
+  <apex:pageBlock title="Contact" >
+  <apex:pageBlockTable value="{!conlist}" var="con">
+  <apex:column value="{!con.name}"/>
+  <apex:column value="{!con.Email}"/> 
+      </apex:pageBlockTable>    
+      </apex:pageBlock>
+  <apex:pageBlock title="Lead" >
+  <apex:pageBlockTable value="{!leadlist}" var="lead" >
+      <apex:column value="{!lead.name}"/>
+          <apex:column value="{!lead.Phone}"/> 
+      </apex:pageBlockTable>    
+      </apex:pageBlock>
+      </apex:form>
+    </apex:page>

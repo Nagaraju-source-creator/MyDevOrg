@@ -1,0 +1,13 @@
+<apex:page controller="ShowContacts" >
+ <apex:pageBlock >
+<apex:pageBlockTable value="{!showcontacts}"  var="s" >
+<apex:column value="{!s.Id}" />
+    <apex:column value="{!s.Name}"/>
+     <apex:column value="{!s.Phone}" />
+    </apex:pageBlockTable>    
+    </apex:pageBlock>
+    
+    
+    
+    
+</apex:page>

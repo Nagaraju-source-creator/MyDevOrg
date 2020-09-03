@@ -1,0 +1,19 @@
+<apex:page >
+<apex:form >
+<apex:selectCheckboxes >
+<apex:selectOption itemLabel="AP" itemValue="ap"></apex:selectOption>
+<apex:selectOption itemLabel="MP" itemValue="mp"></apex:selectOption>
+</apex:selectCheckboxes>
+<apex:selectRadio >
+<apex:selectOption itemLabel="AP" itemValue="ap"></apex:selectOption>
+<apex:selectOption itemLabel="MP" itemValue="mp"></apex:selectOption>
+</apex:selectRadio>
+<apex:selectList size="1">
+<apex:selectoption itemLabel="AP" itemValue="ap"></apex:selectoption>
+<apex:selectOption itemLabel="MP" itemValue="mp"></apex:selectOption>
+</apex:selectList>
+<apex:selectList multiselect="true"></apex:selectList>
+<apex:selectOption itemLabel="AP" itemValue="ap"></apex:selectOption>
+<apex:selectOption itemLabel="MP" itemValue="mp"></apex:selectOption>
+</apex:form>
+</apex:page>

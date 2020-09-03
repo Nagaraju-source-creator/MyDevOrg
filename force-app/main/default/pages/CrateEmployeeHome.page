@@ -1,0 +1,32 @@
+<apex:page standardController="Emplyoee__c" recordSetVar="items">
+    <apex:sectionHeader title="Employee" subtitle="New Employee" help="https://www.google.com/"/>
+    <apex:form >
+        <apex:outputLabel >View</apex:outputLabel>
+        <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<apex:selectList size="1" value="{!id}">
+<apex:selectOptions value="{!ListViewOptions}"></apex:selectOptions>
+<apex:actionSupport event="onchange" rerender="eb"/>
+</apex:selectList>
+<br/>
+ <br/>
+<apex:pageBlock title="Recent Accounts" id="eb">
+<apex:pageBlockButtons location="top">
+ <apex:commandButton value="New" action="{!create}"/>
+ <span style="float:right;">
+<apex:selectList size="1" >
+<apex:selectOption itemLabel="Recently Viewed" itemValue="one"></apex:selectOption>
+ <apex:selectOption itemLabel="Recently Modified" itemValue="two"></apex:selectOption>
+<apex:selectOption itemLabel="Recently Created" itemValue="three"></apex:selectOption>
+        </apex:selectList>
+                </span>
+ </apex:pageBlockButtons>
+            <apex:pageblockTable value="{!items}" var="e" rows="10">
+ <apex:column value="{!e.Name}"/>
+ <apex:column value="{!e.phone__c}"/>
+ <apex:column value="{!e.Email__c}"/>
+ </apex:pageblockTable>
+ </apex:pageBlock>
+</apex:form>
+</apex:page>

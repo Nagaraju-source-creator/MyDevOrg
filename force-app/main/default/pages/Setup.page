@@ -1,0 +1,4 @@
+<apex:page setup="true">
+<apex:sectionHeader title="Customer" subtitle="NewCustomer"
+help="http://www.google.com"   description="This is my custom page" printUrl="/apex/firstpage"/>
+</apex:page>

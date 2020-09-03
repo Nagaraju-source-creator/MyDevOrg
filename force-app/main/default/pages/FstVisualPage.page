@@ -1,0 +1,8 @@
+<apex:page >
+    <h1>
+        welcome to the world!
+    </h1>
+    <p>
+        a visual page is this.
+    </p>
+</apex:page>

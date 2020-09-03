@@ -1,0 +1,5 @@
+<apex:page >
+<apex:sectionHeader title="Vfpage" subtitle="insertpage"/>     <apex:form >
+<apex:iframe frameborder="true" height="200px" scrolling="true" src="https://jocker-dev-ed--c.visualforce.com/apex/insertpage"/>  
+</apex:form>   
+</apex:page>

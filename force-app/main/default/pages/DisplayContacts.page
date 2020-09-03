@@ -1,0 +1,10 @@
+<apex:page controller="Sample1">
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!acct}" var="a">
+            <apex:column value="{!a.Name}"/>
+            <apex:repeat value="{!a.Contacts}" var="c">
+                <apex:column value="{!c.Name}"/>
+            </apex:repeat>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

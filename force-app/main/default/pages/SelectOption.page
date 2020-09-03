@@ -1,0 +1,14 @@
+<apex:page controller="SelectExample" >
+  <apex:form >
+  <apex:selectList size="1">
+   <apex:selectOptions value="{!myoptions}"></apex:selectOptions>
+     </apex:selectList>  
+    <apex:selectList size="1">
+     <apex:selectOption itemLabel="Java" itemValue="Java">
+         </apex:selectOption> 
+     <apex:selectOption itemLabel="Sfdc" itemValue="sf">   
+       </apex:selectOption> 
+      </apex:selectList>
+     </apex:form>  
+    
+</apex:page>

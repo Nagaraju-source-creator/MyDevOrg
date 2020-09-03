@@ -1,0 +1,16 @@
+<apex:page >
+<apex:form >
+<apex:pageBlock title="Registration">
+<apex:outputLabel >EnterName</apex:outputLabel>
+<apex:inputtext />
+<apex:outputLabel >EnterPassword</apex:outputLabel>
+<apex:inputtext />
+<apex:pageBlockSection title="Section">
+<apex:outputLabel >EnterName</apex:outputLabel>
+<apex:inputtext />
+<apex:outputLabel >EnterPassword</apex:outputLabel>
+<apex:inputtext />
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

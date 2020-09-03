@@ -1,0 +1,14 @@
+<apex:page controller="ChartController">
+    <apex:Chart Height="400" width="700" animate="true" data="{!data}">
+        <apex:legend position="left"/>
+    <apex:axis type="Numeric" position="left" fields="data1,data2,data3" title="Closed Won" grid="true">
+        <apex:chartLabel />
+      </apex:axis>
+     <apex:axis type="Category"  position="bottom" fields="name" title="2020">
+         <apex:chartLabel rotate="100"/>
+        </apex:axis>
+        <apex:areaSeries axis="left" xField="name" tips="true" yField="data1,data2,data3" title="MacDonald,Picard,Worlex"/> 
+        
+        
+ </apex:Chart>
+   </apex:page>

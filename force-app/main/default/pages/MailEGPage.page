@@ -1,0 +1,5 @@
+<apex:page controller="MailEG">
+<apex:form >
+<apex:commandButton value="click" action="{!show}"/>
+</apex:form>
+</apex:page>
